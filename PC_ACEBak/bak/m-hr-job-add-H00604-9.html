@@ -1,0 +1,36 @@
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>职位描述</label>
+    <div class="layui-input-block" style="margin-left:150px">
+      <textarea class="layui-textarea vv notnull" style="width:693px"placeholder="请输入职位描述" rows="5" cols="100" autocomplete="off" required lay-verify="required"></textarea>
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label">职位要求</label>
+    <div class="layui-input-block" style="margin-left:150px">
+      <textarea class="layui-textarea vv" style="width:693px" placeholder="" rows="5" cols="100" autocomplete="off" lay-verify=""></textarea>
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>工作地址</label><input class="vv" type="hidden" id="v_address" value="0">
+    <div class="layui-input-block gone address">
+    	<input class="radio other_address" type="radio" name="radio_address" value="其他" title="其他" lay-filter="radio_otheraddress"><br/>
+      <span id="otherAddress" class="gone">
+        <input class="dt_right vv" size="40">
+      </span>
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>英文简历</label><input class="vv" type="hidden" id="v_encv" value="0">
+    <div class="layui-input-inline">
+      <input type="radio" name="radio_encv" id="v_encv0" value="0" title="不需要" lay-filter="radio_encv" checked>
+      <input type="radio" name="radio_encv" id="v_encv1" value="1" title="需要" lay-filter="radio_encv">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>所在公司</label>
+    <div class="layui-input-inline">
+      <input class="layui-input autocomplete-organ notnull" placeholder="请输入所在公司" autocomplete="off" required lay-verify="required" id="amid">
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>所属HR</label>
+    <div class="layui-input-inline">
+      <input class="layui-input notnull autocomplete-hr" placeholder="请输入所属HR" autocomplete="off" required lay-verify="required" id="hrName">
+      <input id="auid" type="hidden">
+    </div>
+  </div>
+</div>
+<div class="layui-form-item gone" id="button">
+      <div class="layui-inline">
+      	<a href="" class="layui-btn layui-btn-normal" target="_blank">联系HR</a>
+      </div>
+      <div class="layui-inline">
+      	<a href="javascript:(0)" class="layui-btn layui-btn-normal" target="_blank" id="v_openJD" onclick="openJd()">打开JD源文件</a>
+      </div>
+</div>
+<div class="dot-line"></div>
+<div class="h20"></div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>职位名称</label>
+    <div class="layui-input-inline">
+      <input class="layui-input vv notnull" placeholder="请输入职位名称" autocomplete="off" required lay-verify="required">
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>所在行业</label>
+    <div class="layui-input-inline">
+      <select class="full-width vv" id="industry_">
+	     <DATAPARAM id="1001" type="SELECT"><option value="%s">%s</option></DATAPARAM>  
+	  </select>
+    </div>
+  </div>
+  <div class="h15"></div>
+  <div class="layui-inline">
+    <label class="layui-form-label">所在部门</label>
+    <div class="layui-input-inline">
+      <input class="layui-input vv" placeholder="请输入所在部门" autocomplete="off" lay-verify="">
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>工作经验</label>
+    <div class="layui-input-inline">
+      <select class="full-width vv" id="work_">
+         <DATAPARAM id="223" type="SELECT"><option value="%s">%s</option></DATAPARAM>  
+      </select>
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>学历要求</label>
+    <div class="layui-input-inline">
+      <select class="full-width vv" id="education_">
+	     <DATAPARAM id="224" type="SELECT"><option value="%s">%s</option></DATAPARAM>  
+	  </select>
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>薪资范围</label><input type="hidden" id="xinzi" class="vv">
+    <div class="layui-input-inline" style="width:110px">
+      <input class="layui-input vv notnull" id="xinzi1" placeholder="请输入薪资范围" autocomplete="off" required lay-verify="required">
+    </div>
+    <label class="layui-form-label" style="width:1px">-</label>
+    <div class="layui-input-inline" style="width:110px">
+      <input class="layui-input vv notnull" id="xinzi2" placeholder="请输入薪资范围" autocomplete="off" required lay-verify="required">
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label">职位亮点</label>
+    <div class="layui-input-inline">
+      <input class="layui-input vv" placeholder="" autocomplete="off" lay-verify="">
+    </div>
+  </div>
+</div>

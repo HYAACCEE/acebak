@@ -1,0 +1,42 @@
+<div class="h20"></div>
+<div class="title color-focus f18 center dt20">完善公司信息</div>
+<div class="dt10">
+  <span class="dt_left f12 sp3 ">公司简称</span>
+  <span class="dt_right"><input class="dt_input1 vv" type="text"></span>
+</div>
+<div class="dt10">
+  <span class="dt_left f12 sp3 "><i class="x"></i>所属行业</span>
+  <span class="dt_right"><select class="selOut dt_right vv notnull"><DATAPARAM id="1001" type="selectPage"><option value="%s">%s</option></DATAPARAM></select></span>
+</div>
+
+<div class="dt10">
+  <span class="dt_left f12 sp3 "><i class="x"></i>公司性质</span>
+  <span class="dt_right"><select class="dt_right vv notnull"><DATAPARAM id="220" type="select"><option value="%s">%s</option></DATAPARAM></select></span>
+</div>
+
+<div class="dt10">
+<span class="dt_left f12 sp3 "><i class="x"></i>公司规模</span>
+<span class="dt_right"><select class="dt_right notnull vv"><DATAPARAM id="222" type="select"><option value="%s">%s</option></DATAPARAM></select>
+</span>
+</div>
+<div class="dt10">
+  <span class="dt_left f12 sp3 ">成立时间</span>
+  <span class="dt_right"><input class="laydate-icon vv" style="width:218px" onclick="laydate({format: 'YYYY-MM-DD', max:laydate.now(-1)})"></span>
+</div>
+
+<div class="dt10">
+  <span class="dt_left f12 sp3 "><i class="x"></i>公司地点</span>
+  <span class="dt_right"><script type="text/javascript" src="../doc/selector/city_func.js"></script><input id="btn_residency" class="dt_input1 vv notnull" onclick="residencySelect($(this).parent())" /><input id="residency" type="hidden" name="residency" /></span>
+</div>
+
+ <div class="dt10">
+  <span class="dt_left f12 sp3 "><i class="x"></i>详细地址</span>
+  <span class="dt_right"><input class="dt_input1 text vv notnull"placeholder="详细地址"></input></span>
+</div>
+<div class="dt10">
+  <span class="dt_left top f12 sp3 ">公司介绍</span>
+  <span class="dt_right"><textarea class="vv" style="width:229px" placeholder="公司介绍"></textarea></span> 
+</div>
+<div class="center dt30">
+ <button type="submit" class="btn-focus h30 next_" style="width:98px">下一步</button>
+</div>

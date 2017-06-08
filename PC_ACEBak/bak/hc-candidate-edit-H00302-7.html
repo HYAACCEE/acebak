@@ -1,0 +1,32 @@
+<div class="hidata_subform"><input class="vv" name="vvn" type="hidden">
+  <div class="dt15">
+    <span class="dt_left f12"><i class="x"></i>起止时间</span><span class="dt_right"><span class="calendar"></span><input type="hidden" class="vv" name="vvn"><span> - </span><span class="calendar"></span><input type="hidden" class="vv" name="vvn"><span class="nowrap today"><input class="checkbox mgl10" type="checkbox" id="checkboxTodayZZZ"><label class="dark-grey f14 sp2" for="checkboxTodayZZZ"> 至今</label></span></span>
+    <span class="dt_left f12"><i class="x"></i>公司名称</span><span class="dt_right"><input class="dt_input1 autocomplete-company vv" autodata1="" name="vvn"></span>
+  </div>
+  <div class="dt15">
+    <span class="gone">
+      <span class="dt_left f12">行业</span><span class="dt_right">
+        <script type="text/javascript" src="../doc/selector/industry_func.js"></script>
+        <input id="btn_IndustryID_2" class="h30 dt_input1 vv" name="vvn" onclick="IndustrySelect_2($(this).parent())" />
+        <input id="IndustryID_2" type="hidden" name="IndustryID_2" />
+      </span>
+    </span>
+    <span class="gone">多段工作经历<input class="vv" name="vvn" type="hidden" value="0"></span>
+    <span class="dt_left f12">部门</span><span class="dt_right"><input class="h30 dt_input1 vv" name="vvn"></span>
+    <span class="dt_left f12"><i class="x"></i>职位</span><span class="dt_right"><input class="dt_input1 vv" name="vvn"></span>
+  </div>
+  <div class="dt15">
+    <span class="dt_left f12 sp1"><span></span>职级</span>
+    <span class="dt_right"><select class="full-width vv" name="vvn"><option></option>
+    <DATAPARAM id="227" type="SELECT"><option value="%s">%s</option></DATAPARAM>
+    </select></span>
+  </div>
+  <div class="dt15">
+    <span class="dt_left f12 top"><i class="x"></i>工作职责</span>
+    <span class="dt_right"><input class="vv" isvvc="1" type="hidden"><textarea class="dt_textarea textLengthCheck_ vvc" name="vvn" textLength="7200" ></textarea><span class="jobDuty_ gone">还可输入 <strong></strong>个汉字</span></span>
+  </div>
+  <div class="text-r pdr50">
+    <span class="red pointer delete_"><img class="middle pdr5" style="width:11px;height:14px;margin-top:-4px" src="../doc/images/HC/delete.png">删除该条目</span>
+  </div>
+  <div class="h30"></div>
+</div>

@@ -1,0 +1,75 @@
+<div>
+  <span class="dt_left f12 sp3 "><i class="x"></i><span>职位名称</span></span>
+  <span class="dt_right"><input class="dt_input notnull vv" type="text"></span>
+</div> 
+<div class="h20"></div>           
+<div>
+  <span class="dt_left f12 sp3 "><i class="x"></i><span>所在行业</span></span>
+  <span class="dt_right">
+	  <select class="full-width vv" id="industry_">
+	     <DATAPARAM id="1001" type="SELECT"><option value="%s">%s</option></DATAPARAM>  
+	  </select>
+  </span>
+</div>
+<div class="h20"></div>              
+<div>
+  <span class="dt_left f12 sp3 "><span>所在部门</span></span>
+  <span class="dt_right"><input class="dt_input vv" type="text"></span>
+</div>
+<div class="h20"></div>               
+<div>
+  <span class="dt_left f12 sp3 "><i class="x"></i><span>工作经验</span></span>
+  <span class="dt_right">
+    <select class="full-width vv">
+      <DATAPARAM id="223" type="SELECT"><option value="%s">%s</option></DATAPARAM>  
+    </select>
+  </span>
+</div>   
+<div class="h20"></div>       
+<div>
+  <span class="dt_left f12 sp3 "><i class="x"></i><span>学历要求</span></span>
+  <span class="dt_right">
+  <select class="full-width vv">
+     <DATAPARAM id="224" type="SELECT"><option value="%s">%s</option></DATAPARAM>  
+  </select>
+  </span>
+</div>
+<div class="h20"></div>
+<div>
+  <span class="dt_left f12 sp3 "><i class="x"></i><span>薪资范围</span><input type="hidden" id="xinzi" class="vv"></span>
+  <span class="dt_right">                  
+    <input type="text" class="h25 mgnl10 notnull vv xinzi_" id="xinzi1" style="width:95px">
+    <span class="pd5"><img style="width:37px;height:1px" src="../doc/images/HR/Dividing.png"></span>
+    <input type="text" class="h25 notnull vv xinzi_" id="xinzi2" style="width:95px">
+    <span class="dark-grey pdl10 sp2">K/月</span>
+  <span>
+</div>
+<div class="h20"></div>    
+<div class="top">
+  <span class="dt_left f12 sp3 "><span>职位亮点</span></span>
+  <span class="dt_right"><input class="dt_input vv" type="text"></span> 
+</div>
+<div class="h20"></div>
+<div class="top">
+  <span class="dt_left top f12 sp3 "><i class="x"></i><span>职位描述</span></span>
+  <span class="dt_right"><textarea type="text" class="dt_input notnull vv" style="height:120px"></textarea></span>
+</div>
+<div class="h20"></div>
+<div class="top">
+  <span class="dt_left top f12 sp3 "><span>职位要求</span></span>
+  <span class="dt_right"><textarea type="text" value="" class="dt_input vv"></textarea></span>
+</div>
+<div class="h20"></div>
+<div class="top"> 
+  <span class="dt_left f12 sp3 top"><i class="x"></i><span class="top">工作地点</span></span>
+  <span class="dt_right"><textarea type="text" class="dt_input vv" id="address_" style="height:40px"></textarea></span>
+</div>
+<div class="h20"></div>
+<div>
+  <span class="dt_left"></span>
+  <span class="dt_right">
+  <input class="checkbox" type="checkbox" value="1" id="checkbox1" onclick="$('#v1').val(this.checked?1:0);">
+  <input class="vv" type="hidden" id="v1" value="0">
+  <span class="dark-grey pd5 f12">需要英文简历</span>
+  </span>
+</div>

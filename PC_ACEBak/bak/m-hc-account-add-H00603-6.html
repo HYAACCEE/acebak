@@ -1,0 +1,49 @@
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>所在公司</label>
+    <div class="layui-input-inline">
+      <input class="layui-input autocomplete-hcCompany_M vv notnull" placeholder="请输入所在公司" autocomplete="off" required lay-verify="required">
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>公司邮箱</label>
+    <div class="layui-input-inline">
+      <input class="layui-input vv notnull" placeholder="请输入公司邮箱" autocomplete="off"  maxlength="50" required lay-verify="email">
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label" id="pic1"><i class="x"></i>头像</label>
+    <div class="layui-input-inline">
+	    <span class="upload_" ftype="PIC" ftip="头像" fsrc="../doc/images/HC/uploadFace.png"></span>
+	    <input type="hidden" class="vvf vv notnull" for="pic1">
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label" id="pic2"><i class="x"></i>身份证照片</label>
+    <div class="layui-input-inline">
+      <span class="dt_right">
+		    <span class="upload_" ftype="PIC" ftip="身份证照片正面" fsrc="../doc/images/HC/uploadphotof.png"></span>
+		    <input type="hidden" class="vvf vv notnull" for="pic2">
+		    <span class="pd5"></span>
+		    <span class="upload_" ftype="PIC" ftip="身份证照片正面" fsrc="../doc/images/HC/uploadphotob.png"></span>
+		    <input type="hidden" class="vvf vv notnull" for="pic2">
+      </span>
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label" id="pic3"><i class="x"></i>名片照片</label>
+    <div class="layui-input-inline">
+      <span class="dt_right">
+		    <span class="upload_" ftype="PIC" ftip="名片正面" fsrc="../doc/images/HC/uploadCardf.png"></span>
+		    <input type="hidden" class="vvf vv notnull" for="pic3">
+		    <span class="pd5"></span>
+		    <span class="upload_" ftype="PIC" ftip="名片反面" fsrc="../doc/images/HC/uploadCardb.png"></span>
+		    <input type="hidden" class="vvf vv notnull" for="pic3">
+      </span>
+    </div>
+  </div>
+</div>

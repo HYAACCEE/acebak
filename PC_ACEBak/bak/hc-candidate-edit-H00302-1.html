@@ -1,0 +1,44 @@
+<div class="hidata_subform"><input class="vv" name="vvn" type="hidden">
+  <div class="dt5">
+    <span class="dt_left f12"><i class="x"></i>姓名</span><span class="dt_right"><input class="dt_input1 notnull vv" name="vvn"></span><span class="dt_left f12">英文名</span><span class="dt_right"><input class="dt_input1 vv" name="vvn"></span>
+  </div>
+  <div class="h15"></div>
+  <div>
+  <span class="dt_left f12"><i class="x"></i>性别</span><input type="hidden" class="vv" name="vvn" id="v_sex">
+  <span class="dt_right">
+    <DATAPARAM id="132" type="RADIO">
+    <span class="pdr100">
+      <input class="radio" type="radio" id="radio%s" name="radio_sex" value="%s">
+      <label class="pdl5" for="radio%s">%s</label>
+    </span>
+    </DATAPARAM>
+  </span><span class="dt_left f12">户籍所在地</span><span class="dt_right">
+	  <script type="text/javascript" src="../doc/selector/city_func.js"></script>
+	  <input id="btn_hukou" class="dt_input1 vv" name="vvn" onclick="hukouSelect($(this).parent())" />
+	  <input id="hukou" type="hidden" name="hukou" />
+  </span>
+  </div>
+  <div class="h15"></div>
+  <div class="dt5">
+  <span class="dt_left f12"><i class="x"></i>出生日期</span><span class="dt_right"><span class="calendar"></span><input type="hidden" class="vv" name="vvn"></span>
+  <span class="dt_left f12"><i class="x"></i>个人邮箱</span><span class="dt_right"><input class="dt_input1 vv" name="vvn"></span>
+  </div>
+  <div class="dt5"></div>
+  <div class="dt5">
+    <span class="dt_left f12"><i class="x"></i>手机</span><span class="dt_right"><input class="vv dt_phone1" maxlength="4" value="+86"/><input class="vv mgl5 dt_phone2" id="phone" maxlength="11"/></span>
+    <span class="dt_left f12">国籍</span>
+    <span class="dt_right"><script type="text/javascript" src="../doc/selector/nationality_func.js"></script><input id="btn_nation" class="dt_input1 vv" name="vvn" onclick="nationSelect($(this).parent())" /></span>
+  </div>
+  <div>
+    <span class="dt_left"></span><span><span class="f9 color-error top" id="checkcandidate"></span></span>
+  </div>
+  <div>
+    <span class="dt_left f12"><i class="x"></i>居住城市</span><span class="dt_right">
+      <input id="btn_residency" class="dt_input1 vv" name="vvn" onclick="residencySelect($(this).parent())" />
+      <input id="residency" type="hidden" name="residency" />
+      <input type="hidden" class=" vv gone" name="vvn" value="区域">
+    </span>
+  </div>
+  <div class="h10"></div>
+  <input type="hidden" id="cmtUpdatePower" value="%s">
+</div>

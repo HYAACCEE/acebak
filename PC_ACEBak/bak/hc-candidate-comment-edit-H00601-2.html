@@ -1,0 +1,33 @@
+<div class="hidata_subform"><input class="vv" name="vvn" type="hidden" id="candidataNameView_"/><input class="vv" name="vvn" type="hidden">
+  <div class="dt10">
+    <span class="dt_1 f12 sp1 f12 sp1"><i class="x"></i>职位</span><span class="dt_2"><input class="dt_input1 notnull vv" name="vvn" /></span><span class="dt_3"></span>
+    <span class="dt_1 f12 sp1"><span></span>职级</span>
+    <span class="dt_2"><select class="full-width vv" name="vvn"><option></option>
+    <DATAPARAM id="227" type="SELECT"><option value="%s">%s</option></DATAPARAM>
+    </select></span>
+  </div>
+  <div class="dt10">
+    <span class="dt_1 f12 sp1"><i class="x"></i>行业</span>
+    <span class="dt_2">
+      <script type="text/javascript" src="../doc/selector/industry_func.js"></script>
+      <input id="btn_IndustryID" class="dt_input1 vv" name="vvn" onclick="IndustrySelect($(this).parent())" readonly />
+      <input id="IndustryID" type="hidden" name="IndustryID" />
+    </span><span class="dt_3"></span>
+    <span class="dt_1 f12 sp1"><i class="x"></i>城市</span>
+    <span class="dt_2">
+      <script class="dt_input1" type="text/javascript" src="../doc/selector/city_func.js"></script>
+      <input id="btn_jobArea" class="dt_input1 vv notnull" onclick="jobAreaSelect($(this).parent())" readonly />
+      <input id="jobAreaID" type="hidden" name="jobAreaID" />
+    </span>
+  </div>
+  <div class="dt10">
+   <span class="dt_1 f12 sp1"><i class="x"></i>期望薪资</span><span class="dt_2"><input class="dt_input1 notnull vv" id="money" name="vvn" onblur="doubleInput(this,1)" maxlength="6" /></span>
+   <span class="dt_3 f12 sp1">万/年</span>
+   <span class="dt_1 f12 sp1">Contractor</span><input type="hidden" class="vv" id="v_contractorZZZ" value="" size="3">
+   <span class="dt_2">
+     <input class="radio" type="radio" id="contractor1ZZZ" name="contractorZZZ" value="1"><label class="f12 sp1 mgl5" for="contractor1ZZZ">接受</label>
+     <span class="pdl100"><input class="radio" type="radio" id="contractor0ZZZ" name="contractorZZZ" value="0"><label class="f12 sp1 mgl5" for="contractor0ZZZ">不接受</span>
+   </span>
+   <span class="dt_3"></span>
+  </div>
+</div>

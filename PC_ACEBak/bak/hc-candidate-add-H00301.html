@@ -1,0 +1,48 @@
+<div class="black pd10 bold f18 text-l">新增候选人</div>
+<div class="h20"></div>
+<div class="pdall10"><span class="pdl3 bg-focus"></span><span class="pd10 black f16 sp2">候选人类型</span></div><input class="vv" type="hidden" id="v_stMode" value="1">
+<div class="pdl15">
+  <div class="pdall5"><input class="radio pointer" type="radio" id="radio1" name="radio_" value="1" checked>
+  <label class="f12 sp3 pd5" for="radio1"><span class="bold pointer opac">申请入库</span>（须符合入库&nbsp;&nbsp;<span class="bold pointer base_condition">基本条件&nbsp;<img src="../doc/images/HC/xiangq_icon.png" height="12" style="margin-top: -1px;" /><div class="condition_content gone"><div class="color-focus">候选人入库需满足以下基本条件并通过人工审核：</div><div>1、未被其他顾问入库;</div><div>2、零售奢侈品行业;</div><div>3、年薪20万以上;</div><div>4、候选人目前看机会。</div></div></span>）</label></div>
+  <div class="pdall5"><input class="radio pointer" type="radio" id="radio2" name="radio_" value="0">
+  <label class="f12 sp3 pd5" for="radio2"><span class="bold pointer opac">暂不入库</span>（自行录入简历，后续也可申请入库）</label></div>
+</div>
+<div class="h10"></div>
+<div class="pdall10"><span class="pdl3 bg-focus"></span><span class="subtitle pd10 black f16">基本信息</span></div>
+<div>
+  <div>
+    <span class="dt_left f12 sp3 pdall10"><i class="x"></i>姓名</span><span class="dt_right pd10"><input class="dt_input notnull vv" id="cname" maxlength="50"></span>
+    <span class="dt_left f12 sp3 pdall10"><i class="x"></i>手机</span><span class="dt_right pd10"><input class="vv notnull" value="+86" maxlength="4" style="width:40px"/><input class="vv notnull mgl10" id="phone" style="width:153px" maxlength="20"></span></span>
+  </div>
+  <div style="height:25px;margin-top:-4px;">
+    <span class="dt_left"></span><span class="dt_right pdl30 f9 red" id="tipCname"></span>
+    <span class="dt_left"></span><span class="dt_right pd50 f9 red" id="tipMobile"></span>
+  </div>
+  <div>
+    <span class="dt_left f12 sp3 pdall10"><i class="x"></i>邮箱</span><span class="dt_right pd10"><input class="dt_input notnull vv" id="email" maxlength="30"></span>
+    <span class="dt_left f12 sp3 pdall10"><i class="x"></i>基本年薪</span><span class="dt_right pd10"><input class="notnull vv" id="money" onblur="doubleInput(this,1)" maxlength="6" style="width:186px"><span class="f12 sp3 pdl10">万/年</span></span><br>
+  </div>
+  <div style="height:25px;margin-top:-4px;">
+    <span class="dt_left"></span><span class="dt_right pdl30 f9 red" id="tipEmail"></span>
+    <span class="dt_left"></span><span class="dt_right pd50 f9 red" id="tipSalary"></span>
+  </div>
+  <div>
+    <span class="dt_left f12 sp3 pdall10"><i class="x"></i>当前公司</span><span class="dt_right pd10"><input class="dt_input autocomplete-company notnull vv" id="mmOrgan" maxlength="50"></span>
+    <span class="dt_left f12 sp3 pdall10"><i class="x"></i>职位</span><span class="dt_right pdl10"><input class="dt_input notnull vv" id="job" maxlength="50"></span>
+  </div>
+  <div style="height:25px;margin-top:-4px;">
+    <span class="dt_left"></span><span class="dt_right pdl30 f9 red" id="tipMMorgan"></span>
+    <span class="dt_left"></span><span class="dt_right pd50 f9 red" id="tipJob"></span>
+  </div>
+</div>
+<div class="h20"></div>
+<div>
+  <span class="dt_left f12 sp3 pdall10" id="p_cv"><i class="x"></i>原始简历</span>
+  <span class="upload_" ftype="DOC|PDF" ftip="简历"></span>
+  <input type="hidden" class="vvf vv notnull" for="p_cv">
+</div>
+<div class="center">
+  <span class="text-c pdall20">
+    <button class="btn-focus pd20 h30 submit_">申请入库</button>
+  </span>
+</div>

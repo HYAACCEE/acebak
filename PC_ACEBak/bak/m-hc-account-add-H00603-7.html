@@ -1,0 +1,49 @@
+<input class="vv" type="hidden" id="mmAmid">
+<div class="dot-line mgall20"></div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>顾问昵称</label>
+    <div class="layui-input-inline">
+      <input class="layui-input vv notnull" placeholder="请输入顾问昵称" autocomplete="off" required lay-verify="required">
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>性别</label><input class="vv" type="hidden" id="v_sex" value="132001">
+    <div class="layui-input-inline">
+      <DATAPARAM id="132" type="RADIO">
+      <input type="radio" name="radio_sex" a="radio%s" b="radio%s" value="%s" title="%s" lay-filter="radio_sex">
+      </DATAPARAM>
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>真实姓名</label>
+    <div class="layui-input-inline">
+      <input class="layui-input vv notnull" placeholder="请输入真实姓名" autocomplete="off" required lay-verify="required|fullName">
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>身份证号</label>
+    <div class="layui-input-inline">
+      <input class="layui-input vv notnull" placeholder="请输入身份证号" autocomplete="off" required lay-verify="identity">
+    </div>
+  </div>
+</div>
+<div class="layui-form-item">
+  <div class="layui-inline">
+    <label class="layui-form-label"><i class="x"></i>手机号</label>
+    <div class="layui-input-inline" style="width: 40px;">
+      <input class="layui-input notnull" maxlength="4" placeholder="86" value="86" autocomplete="off" required lay-verify="number">
+    </div>
+    <div class="layui-input-inline" style="width: 210px;">
+      <input class="layui-input vv notnull" placeholder="请输入手机号" autocomplete="off" required lay-verify="phone">
+    </div>
+  </div>
+  <div class="layui-inline">
+    <label class="layui-form-label">座机</label>
+    <div class="layui-input-inline">
+      <input class="layui-input vv" placeholder="请输入座机" autocomplete="off" lay-verify="">
+    </div>
+  </div>
+</div>

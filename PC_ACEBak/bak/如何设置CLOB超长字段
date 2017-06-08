@@ -1,0 +1,18 @@
+1、修改数据表字段为 clob
+   create table
+2、修改BAK：
+   <input class="vv" isvvc="1" type="hidden"><textarea class="dt_textarea textLengthCheck_ vvc" name="vvn" textLength="7200" ></textarea>
+3、修改webserver的edit方法：添加clobArray
+                 info方法： getDBString_JSON_BO(o, "c29", "", "", "", o2, 2, true)) //工作业绩
+4、修改webserver的detail方法：
+   
+            String c29 = getDBString(o, "c29", "", true);
+            String c29_o2 = hasO2_hcc ? getDBString(o2, "c29", "", true) : null;
+            toBO(c29, c29_o2, 1, true), //工作业绩
+5、修改edit.js:
+
+            if($(vv[i]).attr("isvvc")==1){
+              $(vv[i]).next().val($(vv[i]).val());
+              $(vv[i]).val("");
+            }
+   

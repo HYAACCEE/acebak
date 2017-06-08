@@ -1,0 +1,25 @@
+ <div class="hidata_subform"><input class="vv" name="vvn" type="hidden"><div>
+<div><span class="dt_left"><input class="dt_1 no-border vv readonly" style="width:200px" readonly/></span><input class="bold no-border vv readonly" style="width:400px" readonly></div>
+<div><span class="dt_left"></span><input class="no-border vv readonly" style="width:400px" readonly></div><div class=""><span class="float-r text-r pdr60 btn-slide pointer gone" style="margin-top: -57px" id="li-<INDEX>"><span class="color-focus pd5">展开</span><img style="width:13px;height:7px" src="../doc/images/arrow.png"/></span></div></div>
+<div id="box-<INDEX>">
+  <div class="dt10">
+    <span class="dt_1 f12 top">公司介绍</span>
+    <span class="dt_right">
+      <textarea class="dt_textarea textLengthCheck_ h60 vv" textLength="3200" name="vvn"></textarea>
+      <span class="companyIntroduce_ gone">还可输入<strong></strong>个汉字</span>
+    </span>
+  </div>
+  <div class="dt10">
+    <span class="dt_1 f12"><i class="x"></i>行业</span><span class="dt_2"><script type="text/javascript" src="../doc/selector/industry_func.js"></script><input id="btn_IndustryID_2" class="dt_input1 vv" name="vvn" onclick="IndustrySelect_2($(this).parent())" readonly /><input id="IndustryID_2" type="hidden" name="IndustryID_2" /></span><span class="dt_3"></span>
+  <span class="gone" id="p_jobType">
+    <span class="dt_1 f12"><i class="x"></i>职位类型</span><span class="dt_2"><select class="full-width vv" name="vvn"><option></option>
+    <DATAPARAM id="221" type="SELECT"><option value="%s">%s</option></DATAPARAM>
+    </select></span>
+  </span>
+</div>
+<div class="dt10"><span class="dt_1 f12"><i class="x onlyFirst_"></i>月薪</span><span class="dt_2"><input class="dt_input1 vv" name="vvn" onkeyup="intInput(this)" maxlength="6"/></span><span class="f12 dt_3">元/月</span><span class="dt_1 f12"><i class="x onlyFirst_"></i>年薪</span><span class="dt_2"><input class="dt_input1 vv" name="vvn" onblur="doubleInput(this,1)" maxlength="6"/></span><span class="f12 dt_3">万/年</span></div>
+<div class="dt10"><span class="dt_1 f12"><i class="x onlyFirst_"></i>薪资构成</span><span class="dt_2"><input class="dt_input1 vv" name="vvn" placeholder ="示例：13薪+浮动奖金+2000元/月车贴"></span><span class="dt_3"></span><span class="dt_1 f12"><i class="x"></i>汇报对象</span><span class="dt_2"><input class="dt_input1 vv" name="vvn" placeholder ="示例：华东区销售总监"></span><span class="dt_3"></span></div>
+<div class="dt10">
+  <span class="dt_1 f12"><i class="x"></i>下属人数</span><span class="dt_2"><input class="dt_input1 vv" name="vvn" onkeyup="intInput(this)" maxlength="6"/></span><span class="f12 dt_3">人</span>
+  <span class="gone" id="p_dimissionDate"><span class="dt_1 f12"><i class="x"></i>离职期</span><span class="dt_2"><input class="dt_input1 vv" name="vvn" onkeyup="intInput(this)" maxlength="4"/></span><span class="f12 dt_3">天</span></span>
+</div>
